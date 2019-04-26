@@ -16,7 +16,7 @@ $lots = [
 
 function price_format($price) {
   $price = ceil($price);
-  if ($price > 999) {
+  if ($price >= 1000) {
     $price = number_format($price, 0, '', ' ');
   }
   $price .= " ₽";
